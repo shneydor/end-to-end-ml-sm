@@ -12,8 +12,12 @@ In this section we will clean and prepare the data set for the training steps. T
 A great starting point for the data exploration is the **Table Summary** which can be found in the _Analyses_ section of a flow. 
 
 To create a new analysis press the plus button in the flow diagram and select _Add anlysis_. Then select _Table Summary_ as the chart and press preview to see the results.
-<img src="images/add_analysis.png" alt="Adding a new Analysis">
-<img src="images/table_summary.png" alt="Table Summary" />
+<p align="middle">
+    <img src="images/add_analysis.png" alt="Adding a new Analysis" width=49%>
+    <img src="images/table_summary.png" alt="Table Summary" width=49%/>
+</p>
+
+
 Optionally, press *Create* if you want to add this analysis to the flow.
 
 We can draw the following conclusions from the values of the table summary:
@@ -31,7 +35,9 @@ Data Wrangler provides four ways to handle missing values including filling with
 We will use *Impute* to let Data Wrangler automatically fill with an estimated value. 
 For column *turbine_type* we will use column type *Categorical* and for *oil_temperature* we will use *Numeric*. 
 To perform the transform, first press *Preview* and then *Add*.
-<img src="images/handle_missing.png" alt="Configuring the missing data transform">
+<p align=middle>
+<img src="images/handle_missing.png" alt="Configuring the missing data transform" width=50%>
+</p>
 
 ### Remove Outliers 
 [**ToDo**]
@@ -40,7 +46,9 @@ To perform the transform, first press *Preview* and then *Add*.
 ### Replace Categorical Values with One-Hot-Encodings
 Like for missing data Data Wrangler provides a transform for one-hot-encoding called *Encode categorical*. 
 Select it from the list of transforms and configure it. Again, pressing *Preview* shows a preview of the new one-hot encoded columns and pressing *Add* performs the transform and replaces the original column.
-<img src="images/one_hot_encoding.png" alt="Configure the one-hot encoding tranform">
+<p align=middle>
+<img src="images/one_hot_encoding.png" alt="Configure the one-hot encoding tranform" width=50%>
+</p>
 
 
 ### Split Training and Test Data
@@ -49,5 +57,7 @@ Select it from the list of transforms and configure it. Again, pressing *Preview
 ## Optional: Export Data Flow
 To reuse your cleaning and preprocessing steps in future processing jobs Data Wrangler allows you to export your data flow, or selected steps of your flow, as python code or as jupyter notebook with the steps to create either a Data Wrangler job, Pipeline, or Feature Store feature based on the data flow.
 To export change to the *Export* tab, mark all steps to be exported in the flow diagram and press *Export step*.
-<img src="images/export_flow.png" alt="Exporting steps to python code or jupyter notebooks">
+<p align=middle>
+    <img src="images/export_flow.png" alt="Exporting steps to python code or jupyter notebooks" width=100%>
+</p>
 
